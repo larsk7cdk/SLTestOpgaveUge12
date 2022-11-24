@@ -20,7 +20,7 @@ body:
     id: where-happened
     attributes:
       label: Hvor skete der?
-      description: Hvad hvor i løsningen problemet opstod?
+      description: Hvor i løsningen problemet opstod?
       placeholder: Fortæl hvor der skete!
       value: "På login siden da...!"
     validations:
@@ -38,7 +38,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: Hvilken version af løningen er benyttet?
+      description: Hvilken version af løsningen er benyttet?
       options:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
@@ -68,7 +68,6 @@ body:
     id: severity
     attributes:
       label: Hvilken grad af alvorlighed har problemet?
-      multiple: false
       options:
         - Blokerende
         - Kritisk
