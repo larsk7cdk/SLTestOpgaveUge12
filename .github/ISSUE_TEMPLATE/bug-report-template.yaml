@@ -45,3 +45,9 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+  - type: textarea
+    id: information
+    attributes:
+      label: Relevant information
+      description: Venligst tilføj relevant information, som har med problemet at gøre
+      render: shell
