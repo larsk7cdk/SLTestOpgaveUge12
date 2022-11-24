@@ -33,3 +33,15 @@ body:
       options:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Hvilken browser er benyttet da problemet opstod?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
