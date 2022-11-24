@@ -1,12 +1,7 @@
 name: Fejlrapport
 description: Indsendelse af fejl som er identificeret i forbindelse med brug af løsningen
 title: "[Bug]: "
-
-
-
-
 body:
-
   - type: input
     id: contact
     attributes:
@@ -15,46 +10,3 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: Hvad skete der?
-      description: Hvad skete der da problemet opstod og hvad var det forventede?
-      placeholder: Fortæl hvad der skete!
-      value: "En fejl opstod da...!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: Hvilken version af løningen er benyttet?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: Hvilken browser er benyttet da problemet opstod?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: information
-    attributes:
-      label: Relevant information
-      description: Venligst tilføj relevant information, som har med problemet at gøre
-      render: shell
-  - type: checkboxes
-    id: Vilkår
-    attributes:
-      label: Vilkår
-      description: Ved at indsende dette problem, accepterer du at følge vilkårene for løsningen
-      options:
-        - label: Jeg accepterer at følge løsningens vilkår
-          required: true
