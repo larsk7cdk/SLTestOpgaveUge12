@@ -1,5 +1,5 @@
 name: Fejlrapport
-description: Indsendelse af fejl som er identificeret i forbindelse med brug af løsningen
+description: Indsendelse af fejl, som er identificeret i forbindelse med brug af løsningen
 title: "[Bug]: "
 labels: [ "bug" ]
 assignees:
@@ -7,16 +7,25 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: Tak for du tager dig tid til at udfylde fejlrapporten!
+      value: Tak, for du tager dig tid til at udfylde fejlrapporten!
   - type: input
     id: contact
     attributes:
       label: Kontaktoplysninger
-      description: Hvordan kan vi kontakte dig hvis der er behov for yderligere oplysninger?
+      description: Hvordan kan vi kontakte dig, hvis der er behov for yderligere oplysninger?
       placeholder: ex. email@example.com
     validations:
       required: false
   - type: textarea
+    id: where-happened
+    attributes:
+      label: Hvor skete der?
+      description: Hvad hvor i løsningen problemet opstod?
+      placeholder: Fortæl hvor der skete!
+      value: "På login siden da...!"
+    validations:
+      required: true
+- type: textarea
     id: what-happened
     attributes:
       label: Hvad skete der?
@@ -36,15 +45,37 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: platform
+    attributes:
+      label: Hvilken platfrom blev benyttet, da problemet opstod?      
+      options:
+        - PC
+        - Mac
+        - Andet
+      validations:
+        required: true
+- type: dropdown
     id: browsers
     attributes:
-      label: Hvilken browser er benyttet da problemet opstod?
+      label: Hvilken browser blev benyttet, da problemet opstod?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+ - type: dropdown
+    id: severity
+    attributes:
+      label: Hvilken grad af alvorlighed har problemet?
+      multiple: false
+      options:
+        - Blokerende
+        - Kritisk
+        - Høj
+        - Lav
+        - Ej krtisk
+        - Ny eller forbedrende
   - type: textarea
     id: information
     attributes:
