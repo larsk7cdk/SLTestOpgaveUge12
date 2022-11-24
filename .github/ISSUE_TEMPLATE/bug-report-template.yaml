@@ -2,8 +2,6 @@ name: Fejlrapport
 description: Indsendelse af fejl som er identificeret i forbindelse med brug af løsningen
 title: "[Bug]: "
 labels: ["bug"]
-assignees:
-  -
 body:
   - type: markdown
     attributes:
