@@ -25,56 +25,56 @@ body:
       value: "På login siden da...!"
     validations:
       required: true
-- type: textarea
-    id: what-happened
-    attributes:
-      label: Hvad skete der?
-      description: Hvad skete der da problemet opstod og hvad var det forventede?
-      placeholder: Fortæl hvad der skete!
-      value: "En fejl opstod da...!"
-    validations:
-      required: true
+  - type: textarea
+      id: what-happened
+      attributes:
+        label: Hvad skete der?
+        description: Hvad skete der da problemet opstod og hvad var det forventede?
+        placeholder: Fortæl hvad der skete!
+        value: "En fejl opstod da...!"
+      validations:
+        required: true
+      - type: dropdown
+        id: version
+        attributes:
+          label: Version
+          description: Hvilken version af løsningen er benyttet?
+          options:
+            - 1.0.2 (Default)
+            - 1.0.3 (Edge)
+        validations:
+          required: true
+      - type: dropdown
+        id: platform
+        attributes:
+          label: Hvilken platfrom blev benyttet, da problemet opstod?
+          options:
+            - PC
+            - Mac
+            - Andet
+        validations:
+          required: true
   - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: Hvilken version af løsningen er benyttet?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
+      id: browsers
+      attributes:
+        label: Hvilken browser blev benyttet, da problemet opstod?
+        multiple: true
+        options:
+          - Firefox
+          - Chrome
+          - Safari
+          - Microsoft Edge
   - type: dropdown
-    id: platform
-    attributes:
-      label: Hvilken platfrom blev benyttet, da problemet opstod?      
-      options:
-        - PC
-        - Mac
-        - Andet
-    validations:
-      required: true
-- type: dropdown
-    id: browsers
-    attributes:
-      label: Hvilken browser blev benyttet, da problemet opstod?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
- - type: dropdown
-    id: severity
-    attributes:
-      label: Hvilken grad af alvorlighed har problemet?
-      options:
-        - Blokerende
-        - Kritisk
-        - Høj
-        - Lav
-        - Ej krtisk
-        - Ny eller forbedrende
+      id: severity
+      attributes:
+        label: Hvilken grad af alvorlighed har problemet?
+        options:
+          - Blokerende
+          - Kritisk
+          - Høj
+          - Lav
+          - Ej krtisk
+          - Ny eller forbedrende
   - type: textarea
     id: information
     attributes:
