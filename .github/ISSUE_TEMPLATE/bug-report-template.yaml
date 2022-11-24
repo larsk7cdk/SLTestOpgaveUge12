@@ -5,9 +5,7 @@ labels: [ "bug" ]
 assignees:
   -
 body:
-  - type: markdown
-    attributes:
-      value: Tak for du tager dig tid til at udfylde fejlrapporten!
+
   - type: input
     id: contact
     attributes:
