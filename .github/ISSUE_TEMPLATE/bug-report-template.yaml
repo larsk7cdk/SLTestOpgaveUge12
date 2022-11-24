@@ -51,3 +51,11 @@ body:
       label: Relevant information
       description: Venligst tilføj relevant information, som har med problemet at gøre
       render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Vilkår
+      description: Ved at indsende dette problem, accepterer du at følge vilkårene for løsningen
+      options:
+        - label: Jeg accepterer at følge løsningens vilkår
+          required: true
