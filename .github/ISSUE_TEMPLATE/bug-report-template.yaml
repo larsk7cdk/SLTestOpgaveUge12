@@ -16,3 +16,12 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Hvad skete der?
+      description: Hvad skete der da problemet opstod og hvad var det forventede?
+      placeholder: Fortæl hvad der skete!
+      value: "En fejl opstod da...!"
+    validations:
+      required: true
