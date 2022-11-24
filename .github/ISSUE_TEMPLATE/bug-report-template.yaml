@@ -19,9 +19,9 @@ body:
   - type: textarea
     id: where-happened
     attributes:
-      label: Hvor skete der?
-      description: Hvor i løsningen problemet opstod?
-      placeholder: Fortæl hvor der skete!
+      label: Hvor skete det?
+      description: Hvor i løsningen opstod problemet?
+      placeholder: Fortæl hvor det skete!
       value: "På login siden da...!"
     validations:
       required: true
